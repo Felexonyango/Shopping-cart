@@ -1,11 +1,10 @@
 import React from "react";
-import './components/Style.css';
+import "./App.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import Cart from "./components/Cart";
 import Home from "./components/Home";
 import PageNotFound from "./components/PageNotFound";
-// import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
         </Routes>
         </div>
-        {/* <Footer/> */}
+     
       </Router>
     </div>
   );
