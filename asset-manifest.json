@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.bfc8a2f9.css",
-    "main.js": "/static/js/main.9c5d7264.js",
-    "index.html": "/index.html",
-    "main.bfc8a2f9.css.map": "/static/css/main.bfc8a2f9.css.map",
-    "main.9c5d7264.js.map": "/static/js/main.9c5d7264.js.map"
+    "main.css": "/Felexonyango/Shopping-cart-/static/css/main.bfc8a2f9.css",
+    "main.js": "/Felexonyango/Shopping-cart-/static/js/main.19433179.js",
+    "index.html": "/Felexonyango/Shopping-cart-/index.html",
+    "main.bfc8a2f9.css.map": "/Felexonyango/Shopping-cart-/static/css/main.bfc8a2f9.css.map",
+    "main.19433179.js.map": "/Felexonyango/Shopping-cart-/static/js/main.19433179.js.map"
   },
   "entrypoints": [
     "static/css/main.bfc8a2f9.css",
-    "static/js/main.9c5d7264.js"
+    "static/js/main.19433179.js"
   ]
 }
