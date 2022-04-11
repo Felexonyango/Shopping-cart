@@ -14,11 +14,11 @@ require("dotenv").config();
 app.use(express.json());
 app.use(cors());
 
-// app.use("/api/register", register);
-// app.use("/api/login", login);
+app.use("/api/register",require("./controller/register"));
+app.use("/api/login",require("./controller/login"));
 
 
-app.get("/products", (req, res) => {
+app.get("/api/products", (req, res) => {
   res.send(products);
 });
 
