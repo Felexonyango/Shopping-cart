@@ -19,7 +19,7 @@ export const registerUser = createAsyncThunk(
   "auth/registerUser",
   async (values, { rejectWithValue }) => {
     try {
-      const token = await axios.post("https://felex-shop-api.herokuapp.com/api/register", {
+      const token = await axios.post(`${url}/register`, {
         name: values.name,
         email: values.email,
         password: values.password,
@@ -29,7 +29,7 @@ export const registerUser = createAsyncThunk(
 
       return token.data;
     } catch (error) {
-      console.log(error.response.data);
+     
       return rejectWithValue(error.response.data);
     }
   }
@@ -39,7 +39,7 @@ export const loginUser = createAsyncThunk(
   "auth/loginUser",
   async (values, { rejectWithValue }) => {
     try {
-      const token = await axios.post("https://felex-shop-api.herokuapp.com/api/login", {
+      const token = await axios.post(`${url}/login`, {
         email: values.email,
         password: values.password,
       });
@@ -80,7 +80,7 @@ const authSlice = createSlice({
         const user = jwtDecode(token);
         return {
           ...state,
-          token,
+          token:user.token,
           name: user.name,
           email: user.email,
           _id: user._id,
