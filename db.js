@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const config = require("./confing")
 const connectDB = async () => {
   try {
-    await mongoose.connect(config.DB, {
+    await mongoose.connect("mongodb+srv://ecommerce:ecommerce@cluster0.cpp1h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
 
